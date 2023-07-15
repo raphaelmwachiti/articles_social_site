@@ -321,4 +321,50 @@ main .container .left .profile {
     gap: 0.5rem;
     /*background red*/
     
+} 
+
+.middle .stories .story {
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;/*none*/
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.75rem;
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+}
+.middle .stories .story::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(transparent, rgb(0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.middle .stories .story .name{
+    z-index: 2;
+}
+
+.middle .stories .story:nth-child(1){
+    background: url('img/Instagram-Story.jpg') no-repeat center center/cover;
+}
+.middle .stories .story:nth-child(2){
+    background: url('img/Instagram-Story.jpg') no-repeat center center/cover;
+}
+.middle .stories .story:nth-child(3){
+    background: url('img/Instagram-Story.jpg') no-repeat center center/cover;
+}
+.middle .stories .story:nth-child(4){
+    background: url('img/Instagram-Story.jpg') no-repeat center center/cover;
+}
+.middle .stories .story:nth-child(5){
+    background: url('img/Instagram-Story.jpg') no-repeat center center/cover;
+}
+.middle .stories .story:nth-child(6){
+    background: url('img/Instagram-Story.jpg') no-repeat center center/cover;
 }
