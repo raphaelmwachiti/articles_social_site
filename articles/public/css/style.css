@@ -739,3 +739,72 @@ nav .container .links label{
     transition: all 300ms ease;
     font-size: 0.9rem;   
 }
+
+nav .container .links i{
+    font-size: 1rem;
+}
+nav .container .links a{
+    font-size: 1rem;
+    color: blue; 
+
+}
+
+nav .container .links a:hover{
+    opacity: 0.9;
+    color: var(--color-dark);
+    font-size: 1.25rem;
+
+}
+
+.active-link {
+    color: var(--color-dark);
+    font-size: 3rem;
+}
+/*main contianer*/
+
+.container-fluid h1{
+    font-weight:900;
+    font-size: 3rem;
+
+}
+main .container2 .theme-2{
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    margin-left: 2rem;
+}
+main .learn-more{
+    margin: auto;
+    max-width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+main .learn-more i{ 
+    font-size: 1.25rem;
+}
+main .learn-more:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+main .container2{
+    margin-top: 2rem ;
+    align-items: center center;
+}
+.article-btn{
+    width: 250px;
+    height: 3rem;
+    border-radius:2rem;
+    margin-top: 0.75rem;
+    color: var(--color-dark);
+    background: linear-gradient(45deg,#26ffa8,#3db5ed,#660cec); 
+    padding:  0.6rem 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    max-width: fit-content; 
+    font-weight:700;
+    transition: all 300ms ease;
+}
