@@ -780,3 +780,58 @@ main .learn-more{
     justify-content: center;
     font-size: 1rem;
 }
+main .learn-more i{ 
+    font-size: 1.25rem;
+}
+main .learn-more:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+main .container2{
+    margin-top: 2rem ;
+    align-items: center center;
+}
+.article-btn{
+    width: 250px;
+    height: 3rem;
+    border-radius:2rem;
+    margin-top: 0.75rem;
+    color: var(--color-dark);
+    background: linear-gradient(45deg,#26ffa8,#3db5ed,#660cec); 
+    padding:  0.6rem 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    max-width: fit-content; 
+    font-weight:700;
+    transition: all 300ms ease;
+}
+
+.article-btn:hover{
+color: white;
+opacity: 0.9;
+}
+main .container-fluid .right-home{
+    background: #660cec;
+} 
+main .container2 .right-home{
+    background: #660cec;
+
+}
+
+.article {
+    background: rgba(209, 223, 255, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    display: none;
+    place-items: center;
+    font-size: 0.9rem;
+    
+}
