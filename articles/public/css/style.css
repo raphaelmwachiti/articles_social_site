@@ -417,3 +417,50 @@ main .container .left .profile {
     display: flex;
     gap: 1rem;
 }
+
+.middle .feed .photo {
+    border-radius: var(--card-border-radius);
+    overflow:hidden ;
+    margin: 0.7rem 0;
+    position: relative;
+}
+
+
+.middle .feed .photo .feed-cover{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(0, 0, 0));
+    position: absolute;
+    bottom: 0;
+    padding-top: 4.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: var(--color-light);
+}
+
+.middle .feed .photo .feed-cover .colorful-btn{
+    margin-top: 0.75rem;
+    color: var(--color-dark);
+    background: linear-gradient(35deg,#26ffa8,#3db5ed,#660cec);
+}
+.middle .feed .photo .feed-cover .colorful-btn:hover{
+    color: white;
+    opacity: 0.9;
+}
+
+.middle .feed .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 0.6rem;
+}
+.middle .feed .action-buttons i:hover{
+    color: var(--color-primary);
+}
+
+.middle .liked-by {
+    display: flex;
+}
