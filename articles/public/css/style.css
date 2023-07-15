@@ -835,3 +835,62 @@ main .container2 .right-home{
     font-size: 0.9rem;
     
 }
+
+.article .card {
+    background: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    width: 80%;
+    box-shadow: 0 0 1rem var(--color-dark);
+    height: 90vh;
+    
+}
+.article .card .close{
+    display: flex;
+    margin-left: 105%;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.article .card .close:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.article .card .article-head {
+    width:75vw ;
+    position: fixed;
+    top:5vh;
+    
+}
+
+main .slideshow-area{
+    background:var(--color-dark) ;
+    margin-top: 3rem;
+    height: max-content;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-bottom: 3rem;
+
+}
+
+main .slideshow-area .carousel-inner .slide-cover{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0));
+    position: absolute;
+    bottom: 0;
+    padding-top: 25%;
+    padding-left: 15%;
+    padding-right: 30%;
+    color: var(--color-light);
+
+} 
+main .slideshow-area .carousel-inner .slide-cover p{
+    max-height: 35%;
+    overflow: hidden;
+}
