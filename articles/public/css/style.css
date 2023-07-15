@@ -40,4 +40,44 @@ body {
     color: var(--color-dark);
     background: var(--color-light);
     overflow-x: hidden;
+} 
+
+/*general */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.profile-pic {
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+} 
+.btn.primary{
+    background: var(--color-primary);
+    color: #fff;
+} 
+.btn.danger{
+    background: var(--color-danger);
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
