@@ -993,3 +993,66 @@ color: var(--color-light);
 #floatingTextarea2 {
     height: 150px;
 }
+
+/* Media querries for laptops and tablets */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 96%;
+    } 
+    .container2 {
+        width: 96%;
+    } 
+    .container3 {
+        width: 96%;
+    } 
+    main .slideshow-area .carousel-inner .slide-cover{
+        padding-top: 10%;
+        padding-right: 10%;
+        background: rgba(0, 0, 0,0.6);
+    } 
+ 
+    main .slideshow-area .carousel-inner .slide-cover p{
+        max-height: 40%;
+        overflow: hidden;
+    }
+ 
+    main .container {
+        grid-template-columns: 5rem auto 30vw;
+        gap: 1rem;
+    } 
+    
+
+    .left {
+        width: 5rem;
+        z-index: 5;
+    }
+ 
+    main .container .left .profile{
+        display: none;
+    }
+ 
+    .sidebar h3 {
+        display: none;
+    }
+ 
+    .left .create-pos {
+        display: none;
+    }
+ 
+    .customize-theme .card {
+        width: 92vw;
+    } 
+    nav .container .links {
+        gap: 1rem;
+        display: none;
+    } 
+    nav .btn-group{
+        display: block;
+    }    
+
+    .sp {
+        display: none;
+    }
+        
+ }
