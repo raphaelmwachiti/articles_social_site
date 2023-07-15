@@ -1,0 +1,442 @@
+<!-- <?php
+session_start();
+
+    include("connection.php");
+    include("functions.php");
+
+    $user_data = check_login($con); 
+
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--CDNs-->
+        
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+        <!--
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        -->
+
+        <!--stylesheet-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- <style>
+            <?php include 'css/style.css'; ?>
+        </style> -->
+    </head> 
+    <body>
+        <!--Navigation bar --> 
+        <nav>
+            <div class="container">
+                <h2 class="logo">
+                    Articles
+                </h2>
+                <div class="search-bar">
+                    <i class="uil uil-search"></i>
+                    <input type="search" placeholder="Search for creators, topics and inspiration.">
+                </div>
+                <div class="create">
+                    <a href="/"><label class="btn danger">Logout</label></a>
+                    <div class="profile-pic">
+                        <img src="img/user_icon_004.webp">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--main-->
+        <main>
+            <div class="container">
+                <!-- left-->
+                <div class="left">
+                    <a class="profile">
+                        <div class="profile-pic">
+                            <img src="img/user_icon_004.webp">
+                        </div>
+                        <div class="handle">
+                            <h4>User 1</h4>
+                            <p class="text-muted">
+                                @username1
+                            </p>
+                        </div>
+                    </a>
+                    <!-- sidebar-->
+                    <div class="sidebar">
+                        <a class="menu-item">
+                            <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
+                        </a>
+                        <a class="menu-item" id="messages-notifications">
+                            <span><i class="uil uil-envelope"><small class="notification-count">6</small></i></span><h3>Messages</h3>
+                        </a>
+                        <a class="menu-item" id="notifications">
+                            <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notification</h3>
+                            <!--notification pop-->
+                            <div class="notifications-popup">
+                                <div>
+                                    <div class="profile-pic">
+                                        <img src=".img/user_icon_004.webp">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>UserTwoName</b> accepted follow request.
+                                        <small class="text-muted">2 days ago</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="profile-pic">
+                                        <img src=".img/user_icon_004.webp">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>UserThreeName</b> messaged you
+                                        <small class="text-muted">1 days ago</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="profile-pic">
+                                        <img src=".img/user_icon_004.webp">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>UserFourName</b> accepted follow request.
+                                        <small class="text-muted">20 days ago</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="profile-pic">
+                                        <img src=".img/user_icon_004.webp">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>UserTwoName</b> accepted follow request.
+                                        <small class="text-muted">2 days ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="menu-item">
+                            <span><i class="uil uil-bookmark"></i></span><h3>Bookmarks</h3>
+                        </a>
+                        <a class="menu-item">
+                            <span><i class="uil uil-cog"></i></span><h3>Settings</h3>
+                        </a>
+                    </div>
+                    <!-- sidebar end-->
+                    <a href="/editor.html">
+                        <label class="btn btn-primary"> 
+                            <span class="create-pos">Create post </span>
+                            <i class="uil uil-share"></i>
+                        </label>
+                    </a> 
+                </div>
+                <!--End of left--> 
+                <!-- middle-->
+                <div class="middle">
+                    <!--stories/ads-->
+                    <div class="stories">
+                        <div class="story">
+                            <div class="profile-pic">
+                                <img src="img/user_icon_004.webp" a>
+                            </div>
+                            <p class="name">Your story</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile-pic">
+                                <img src="img/user_icon_004.webp" a>
+                            </div>
+                            <p class="name">Random 3</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile-pic">
+                                <img src="img/user_icon_004.webp" a>
+                            </div>
+                            <p class="name">Random 4</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile-pic">
+                                <img src="img/user_icon_004.webp" a>
+                            </div>
+                            <p class="name">Random 5</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile-pic">
+                                <img src="img/user_icon_004.webp" a>
+                            </div>
+                            <p class="name">Random 6</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile-pic">
+                                <img src="img/user_icon_004.webp" a>
+                            </div>
+                            <p class="name">Random 7</p>
+                        </div>
+                    </div>	
+                    <!--End of stories --> 
+                    <!-- <form class="create-post">
+                        <div class="profile-pic">
+                            <img src="img/user_icon_004.webp">
+                        </div>
+                        <input type="text" placeholder="What`s on your mind, user1" id="create-post">
+                        <input type="submit" value="Post" class="btn btn-primary">
+                    </form> -->
+                    <!--Feeds-->
+                    <div class="feeds ">
+                        <!--The first feed-->
+                        <!-- <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-pic">
+                                        <img src="img/user_icon_004.webp" >
+                                    </div>
+                                    <div class="info">
+                                        <h3>User22</h3>
+                                        <small>Dubai, 15 MIN ago</small>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            clicking on the post should open the full article	
+                            <div class="photo">
+                                <img src="img/images.jfif" alt="">
+                                <div class="feed-cover">
+                                    <h2>Our Impact</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolores dicta dolorum earum illum architecto nostrum voluptate sed quod deleniti magni numquam vitae inventore maiores, error unde facilis, veniam rerum.</p>
+
+                                    <label class="btn colorful-btn" id="indulge" >Indulge <i class="uil uil-angle-right-b"></i></label>
+                                </div>
+                            </div>
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-thumbs-up act"></i></span>
+                                    <span><i class="uil uil-comment-alt-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="uil uil-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="img/user_icon_004.webp" ></span>
+                                <span><img src="img/user_icon_004.webp" ></span>
+                                <span><img src="img/user_icon_004.webp" ></span>
+                                <span><img src="img/user_icon_004.webp" ></span>
+                                <p>Liked by <b>User45 </b> and others</p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>User22</b> This Writing was inspired by my cat jeff <span class="harsh-tag">#catsrule</span></p>
+                            </div>
+                            <div class="comments text-muted">View - 277 comments  </div>
+                        </div> -->
+                        <!--Feed 2-->
+                        <!-- <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-pic">
+                                        <img src="img/user_icon_004.webp" >
+                                    </div>
+                                    <div class="info">
+                                        <h3>User32</h3>
+                                        <small>China, 30 MIN ago</small>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            clicking on the post should open the full article	
+                            <div class="photo">
+                                <b>The candle</b>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corporis consequatur reprehenderit tenetur et quae iste quod, officia quas deserunt sit repellat odit voluptatem incidunt iusto neque ad? Quam, dicta. </p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit blanditiis adipisci assumenda placeat laudantium magnam eligendi, excepturi dignissimos facilis eveniet omnis libero nisi! Modi fuga ipsum dolor, quod ullam minus.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint assumenda, praesentium harum reprehenderit culpa eligendi deleniti, accusantium consectetur unde ut fuga atque dignissimos optio vero obcaecati voluptatum quas repudiandae et!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eveniet, excepturi quibusdam similique reiciendis voluptate cum! Ad optio adipisci dignissimos. Esse expedita quidem iure qui minima facilis quis repellat recusandae!</p>
+                                
+                            </div>
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-thumbs-up"></i></span>
+                                    <span><i class="uil uil-comment-alt-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="uil uil-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="img/user_icon_004.webp" ></span>
+                                <span><img src="img/user_icon_004.webp" ></span>
+                                <span><img src="img/user_icon_004.webp" ></span>
+                                <span><img src="img/user_icon_004.webp" ></span>
+                                <p>Liked by <b>User45 </b> and others</p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>User22</b> This Writing was inspired by my cat jeff <span class="harsh-tag">#catsrule</span></p>
+                            </div>
+                            <div class="comments text-muted">View - 277 comments  </div>
+                        </div>   -->
+
+                    </div>
+                    <!--End of feeds-->
+
+                </div>  
+                <!--End of middle-->
+
+                <!-- right-->
+                <div class="right">
+                    <div class="messages">
+                        <div class="heading">
+                            <h4>Messages</h4><i class="uil uil-edit"></i>
+                        </div>
+                        <!--Search bar-->	
+                        <div class="search-bar">
+                            <i class="uil uil-search"></i>
+                            <input type="search" placeholder="Search messages" id="message-search">
+                        </div>
+                        <!--categories-->	
+                        <div class="category">
+                            <h6 class="active">Primary Messages</h6>
+                            <h6 >Threads</h6>
+                            <h6 class="message-requests">Request(8)</h6>
+                        </div>		
+                        <!--Message-->
+                        <div class="message">
+                            <div class="profile-pic">
+                                <img src="img/user_icon_004.webp" >
+                            </div>
+                            <div class="message-body">
+                                <h5>Edem Quist</h5>
+                                <p class="text-muted">Have you seen the update</p>
+                            </div>
+                        </div>	
+                        <!--Message-->
+                        <div class="message">
+                            <div class="profile-pic">
+                                <img src="img/user_icon_004.webp" >
+                                <div class="active"></div>
+                            </div>
+                            <div class="message-body">
+                                <h5>john jack</h5>
+                                <p class="text-bold">4 new messages</p>
+                            </div>
+                        </div>	
+                        <!--Message-->
+                        <div class="message">
+                            <div class="profile-pic">
+                                <img src="img/user_icon_004.webp" >
+                                <div class="active"></div>
+                            </div>
+                            <div class="message-body">
+                                <h5>Raphael Mwachiti</h5>
+                                <p class="text-bold">new message</p>
+                            </div>
+                        </div>	
+                        <!--Message-->
+                        <div class="message">
+                            <div class="profile-pic">
+                                <img src="img/user_icon_004.webp" >
+                            </div>
+                            <div class="message-body">
+                                <h5>Jackson Mike</h5>
+                                <p class="text-muted">Sorry NVM</p>
+                            </div>
+                        </div>	
+                    </div>
+                    <!-- end of messages-->
+                    <!--Friend equests-->
+                    <div class="friend-request">
+                        <h4>Requests</h4>
+                        <div class="request">
+                            <div class="info">
+                                <div class="profile-pic">
+                                    <img src="img/user_icon_004.webp">
+                                </div>
+                                <div>
+                                    <h5>Raphael Mwachiti</h5>
+                                    <p class="text-muted">
+                                        7 mutal friends
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="action-btns">
+                                <button class="btn btn-primary">
+                                    Accept
+                                </button>
+                                <button class="btn">
+                                    Decline 
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="request">
+                            <div class="info">
+                                <div class="profile-pic">
+                                    <img src="img/user_icon_004.webp">
+                                </div>
+                                <div>
+                                    <h5>Jackson Mwachiti</h5>
+                                    <p class="text-muted">
+                                        70 mutal friends
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            <div class="action-btns">
+                                <button class="btn btn-primary">
+                                    Accept
+                                </button>
+                                <button class="btn">
+                                    Decline 
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="request">
+                            <div class="info">
+                                <div class="profile-pic">
+                                    <img src="img/user_icon_004.webp">
+                                </div>
+                                <div>
+                                    <h5>Luke Ekochu</h5>
+                                    <p class="text-muted">
+                                        1 mutal friend
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            <div class="action-btns">
+                                <button class="btn btn-primary">
+                                    Accept
+                                </button>
+                                <button class="btn">
+                                    Decline 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end right-->
+            </div>
+        </main>
+        
+        <!-- bootstrap js -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+        <script src="js/home.js"></script> -->
+        
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+
+        <script src="js/firebase.js"></script>
+        <script src="js/home.js"></script>
+        
+
+    </body>  
+</html>
