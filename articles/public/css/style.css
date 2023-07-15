@@ -534,3 +534,64 @@ main .container .right{
 .right .messages .message-requests {
     color: var(--color-primary);
 }
+
+.right .messages .message {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: start;
+}
+
+.right .messages .profile-pic {
+    position: relative;
+    overflow: visible ;
+}
+.right .messages .profile-pic img{
+    border-radius: 50%;
+}
+
+.right .messages .message:last-child {
+    margin: 0;
+}
+
+.right .messages .message p {
+    font-size: 0.8rem;
+}
+
+.right .messages .message .message-body h5 {
+    font-size: 1rem;
+}
+
+.right .messages .message .profile-pic .active {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
+    background: var(--color-success);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*freind requests*/
+.right .friend-request { 
+    margin-top: 1rem;
+}
+
+.right .friend-request h4 {
+    color: var(--color-gray);
+    margin: 1rem 0;
+}
+
+.right .request {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-bottom: 0.7rem;
+}
+
+.right .request .info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
