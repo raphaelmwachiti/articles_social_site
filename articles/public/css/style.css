@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+    --color-dark: hsl(254, 28%, 16%); 
+    --color-light: hsl(255, 14%, 95%); 
+    --color-white: hsl(253, 30%, 100%); 
+    --color-gray: hsl(234, 16%, 65%); 
+    --color-primary: hsl(221, 73%, 44%); 
+    --color-secondary: hsl(229, 100%, 90%); 
+    --color-success: hsl(120, 70%, 55%); 
+    --color-danger: hsl(0, 85%, 56%); 
+    --color-black: hsl(254, 32%, 8%); 
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -1.8rem;
+
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-dark);
+    background: var(--color-light);
+    overflow-x: hidden;
+}
