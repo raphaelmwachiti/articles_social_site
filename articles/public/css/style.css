@@ -671,3 +671,71 @@ main .container .right{
     padding-bottom: 0.5rem;
     align-items: center;
 }
+
+.customize-theme .username i{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.customize-theme .password {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 10vw;
+}
+
+.customize-theme .password i{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.customize-theme .password h4{
+    width: 4vw;
+    text-align: center;
+    border-bottom: 3px solid var(--color-dark);
+    padding-bottom: 0.5rem;
+}
+
+.customize-theme .login-action {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 10vw;
+    
+}
+
+.customize-theme .login-action h4 {
+    width: 3vw;
+    text-align: center;
+}
+
+
+
+/*page 2*/
+/*general 2*/
+.container2 {
+    width: 70%;
+    margin: 0 auto;
+    align-items: flex-end;
+    margin-top: 3rem;
+}
+
+.container3 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*navigation bar*/
+nav .container .links {
+    gap: 1rem;
+}
+
+
+nav .container .links label{
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;   
+}
