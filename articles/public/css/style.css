@@ -600,3 +600,67 @@ main .container .right{
     display: flex;
     gap: 1rem;
 }
+
+/* theme customization/ loging form*/
+
+.customize-theme {
+    background: rgba(209, 223, 255, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    display: none;
+    place-items: center;
+    font-size: 0.9rem;
+    
+}
+
+.customize-theme .card {
+    background: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    width: 50%;
+    box-shadow: 0 0 1rem var(--color-dark);
+
+    
+}
+
+.customize-theme .card .close{
+    display: flex;
+    margin-left: 100%;
+    margin-top: -1.75rem;
+    font-size: 1.5rem;
+}
+.customize-theme .card .close:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.customize-theme .card .login-head {
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid var(--color-light);
+    padding-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.customize-theme .card .quote {
+    display: flex;
+}
+
+.customize-theme .card .quote .login-quote {
+    font-size: 2rem;
+    top: -0.60rem;
+    position: relative;
+}
+
+.modal-body .username {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 10vw;
+}
