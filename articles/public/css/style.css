@@ -950,4 +950,46 @@ main .meet-team h2{
 }
 .slideshow-area .centered hr{
     color: var(--color-light);  
+} 
+
+.slideshow-area{
+    background:var(--color-dark) ;
+    margin-top: 3rem;
+    height: max-content;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-bottom: 3rem;
+
+}
+
+.centered1 {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+.centered1 h2{
+margin-bottom: 2rem;
+}
+.centered1 p{
+font-size: 1.2rem;
+}
+.slideshow-area .centered1{
+    margin: 0 auto;
+    text-align: center;
+  
+}
+.slideshow-area .centered1 h3{
+color: var(--color-light);
+margin-bottom: 1.3rem;
+}
+.slideshow-area .centered1 hr{
+color: var(--color-light);
+
+}
+
+#floatingTextarea2 {
+    height: 150px;
 }
