@@ -808,3 +808,51 @@ main .container2{
     font-weight:700;
     transition: all 300ms ease;
 }
+
+.article-btn:hover{
+color: white;
+opacity: 0.9;
+}
+main .container-fluid .right-home{
+    background: #660cec;
+} 
+main .container2 .right-home{
+    background: #660cec;
+
+}
+
+.article {
+    background: rgba(209, 223, 255, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    display: none;
+    place-items: center;
+    font-size: 0.9rem;
+    
+}
+
+.article .card {
+    background: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    width: 80%;
+    box-shadow: 0 0 1rem var(--color-dark);
+    height: 90vh;
+    
+}
+.article .card .close{
+    display: flex;
+    margin-left: 105%;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.article .card .close:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+}
