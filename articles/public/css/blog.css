@@ -39,3 +39,38 @@
     margin: 30px auto;
     object-fit: contain;
 }
+
+.sub-heading{
+    padding: 0 5vw;
+    color: #2d2d2d;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 80px;
+    
+} 
+
+.feed {
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.feed .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed .user {
+    display: flex;
+    gap: 1rem;
+}
+
+.feed .photo {
+    border-radius: var(--card-border-radius);
+    overflow:hidden ;
+    margin: 0.7rem 0;
+    position: relative;
+}
