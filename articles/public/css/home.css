@@ -85,3 +85,19 @@ body{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 80px;
 } */
+
+.blog-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* .blog-overview{
+    margin: 10px 0 20px;
+    line-height: 30px;
+} */
+
+.btn.dark{
+    background: #1b1b1b;
+    color: #fff;
+}
