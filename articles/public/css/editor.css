@@ -86,3 +86,16 @@ textarea::-webkit-scrollbar-thumb{
     justify-content: center;
     align-items: center;
 }
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn.grey{
+    background: white;
+    color: black;
+    margin-left: 20px;
+    font-size: 14px;
+}
