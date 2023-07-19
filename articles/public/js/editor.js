@@ -38,4 +38,10 @@ const uploadImage = (uploadFile, uploadType) => {
     } else{
         alert("upload Image only");
     }
+} 
+
+const addImage = (imagepath, alt) => {
+    let curPos = articleFeild.selectionStart;
+    let textToInsert = `\r![${alt}](${imagepath})\r`;
+    articleFeild.value = articleFeild.value.slice(0, curPos) + textToInsert + articleFeild.value.slice(curPos);
 }
