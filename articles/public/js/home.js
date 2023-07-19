@@ -60,3 +60,20 @@ const createFeed = (blog) => {
                         <i class="uil uil-bookmark"></i>
                     </div>
                 </div>
+                
+                <div class="liked-by">
+                    <!-- <span><img src="img/user_icon_004.webp" ></span>
+                    <span><img src="img/user_icon_004.webp" ></span>
+                    <span><img src="img/user_icon_004.webp" ></span>
+                    <span><img src="img/user_icon_004.webp" ></span> -->
+                    <p>Liked by <b>User45 </b> and others</p>
+                </div>
+
+                <div class="caption">
+                    <p><b>User22</b> This Writing was inspired by my cat jeff <span class="harsh-tag">#catsrule</span></p>
+                </div>
+                <div class="comments text-muted">View - 277 comments  </div>
+            </div>  
+    `;
+
+}
