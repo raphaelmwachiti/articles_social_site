@@ -77,3 +77,20 @@ const createFeed = (blog) => {
     `;
 
 }
+
+const createBlog = (blog) => {
+    let data = blog.data();
+    blogSection.innerHTML += `
+    <div class="col">
+              <div class="card">
+                <img src="${data.bannerImage}" class="card-img-top blog-image" alt="">
+                <div class="card-body">
+                  <h5 class="card-title blog-title">${data.title.substring(0, 100) + '...'}</h5>
+                  <p class="card-text blog-overview">${data.article.substring(0, 200) + '...'}</p>
+
+                  <a href="/${blog.id}" ><button class="article-btn mt-1" >Read Article</button></a>
+                </div>
+              </div>
+    </div>
+    `;    
+}
