@@ -1,3 +1,5 @@
+const express = require('express');
+const path = require('path');
 const fileupload = require('express-fileupload');
 
 let initial_path = path.join(__dirname, "public"); 
@@ -30,4 +32,4 @@ app.get('/general-admissions', (req, res) => {
 }) 
 app.get('/join-us', (req, res) => {
     res.sendFile(path.join(initial_path, "join-us.html"));
-}) 
+})  
