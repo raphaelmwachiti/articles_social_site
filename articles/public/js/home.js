@@ -94,3 +94,17 @@ const createBlog = (blog) => {
     </div>
     `;    
 }
+
+
+
+//sidebar 
+const menuItems = document.querySelectorAll('.menu-item');
+// messages 
+const messagesNotification = document.querySelector('#messages-notifications');
+const messages = document.querySelector('.messages');
+
+//message filter, get all first
+const message = messages.querySelectorAll('.message');
+const messageSearch = document.querySelector('#message-search');
+
+// sidebar
