@@ -108,3 +108,10 @@ const message = messages.querySelectorAll('.message');
 const messageSearch = document.querySelector('#message-search');
 
 // sidebar
+
+//remove active class from all menu items 
+const changeActiveItem = () => {
+    menuItems.forEach(item => {
+        item.classList.remove('active');
+    })
+}
