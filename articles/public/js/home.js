@@ -115,3 +115,24 @@ const changeActiveItem = () => {
         item.classList.remove('active');
     })
 }
+
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        changeActiveItem();
+
+        item.classList.add('active');
+        if(item.id != 'notifications'){
+            document.querySelector('.notifications-popup').style.display = 'none';
+        } else {
+            document.querySelector('.notifications-popup').style.display = 'none';
+            document.querySelector('#notifications .notification-count').style.display ='none';
+        }
+        
+        /*
+        if(item.id != 'main-theme'){
+            document.querySelector('.customize-theme').style.display = 'none';
+        }else {
+            document.querySelector('.customize-theme').style.display = 'grid'2;
+        } */
+    })
+})
