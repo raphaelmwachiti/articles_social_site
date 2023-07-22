@@ -1,48 +1,3 @@
-<!-- <?php
-session_start(); 
-
-include("connection.php");
-include("functions.php");
-
-
-
-if($_SERVER['REQUEST_METHOD'] == "POST")
-{
-//something was posted
-$user_name = $_POST['user_name'];
-$password = $_POST['password'];
-
-if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
-{
-
-  //read 
-
-  $query = "select * from users where user_name = '$user_name' limit 1";
-  $result = mysqli_query($con, $query);
-
-  if($result)
-  {
-    if($result && mysqli_num_rows($result) > 0)
-    {     
-      $user_data = mysqli_fetch_assoc($result);
-
-      if($user_data['password'] == $password)
-      {
-        $_SESSION['user_id'] = $user_data['user_id'];
-        header("Location: home.php");
-        die;
-      }
-    }
-  }
-  echo "Wrong loging details";
-  
-}else
-{
-  echo "Wrong username and password";
-}
-}
-?>  -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,20 +5,15 @@ if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philo</title>
+    <title>Articles</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 	
-
 	<!--stylesheet-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-    
-    <!-- <style>
-        <?php include 'css/style.css'; ?>
-    </style> -->
     
 </head>
 <body style="background-color: white;">
@@ -105,13 +55,14 @@ if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
 	</nav>
     <!--End of Navigation bar-->
     
+    <!-- main -->
     <main>
         <div class="container2" > 
             <div class="container-fluid">
                 <div class="row d-flex ">
                     <div class="col flex-grow-1 ms-3 ">
                         <br><br><br><br>
-                        <h1>A crypto wallet & gateway to blockchain apps</h1>
+                        <h1>Purple Boxes Highlight Where Images Will Be Placed</h1>
                     
                         <p>A small paragraph for more information and extra space to add stuff</p><br>
 
@@ -176,12 +127,6 @@ if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
                             <button class="article-btn">Indulge<i class="uil uil-angle-right-b"></i></button>
 
                         </div>
-                        <!--
-                            <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                        -->
                     </div>
                     <div class="carousel-item">
                         <img src="img/slide-2.jpg" class="d-block w-100" alt="...">
@@ -190,12 +135,6 @@ if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolores dicta dolorum earum illum architecto nostrum voluptate sed quod deleniti magni numquam vitae inventore maiores, error unde facilis, veniam rerum.</p>
                             <button class="article-btn">Indulge<i class="uil uil-angle-right-b"></i></button>
                         </div>
-                        <!--
-                            <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                        -->
                     </div>
                 </div>
 
@@ -224,7 +163,8 @@ if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
             </div>  
         </div>
         <section class="slideshow-area"></section>
-    </main>
+    </main> 
+    <!-- end of main -->
 
     <!--pop ups-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -277,7 +217,7 @@ if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
             </div>
         </div>
     </div>
-
+    <!-- End of pop ups -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
     <script src="js/index.js"></script>
     

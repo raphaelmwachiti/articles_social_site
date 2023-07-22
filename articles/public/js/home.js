@@ -128,12 +128,6 @@ menuItems.forEach(item => {
             document.querySelector('#notifications .notification-count').style.display ='none';
         }
         
-        /*
-        if(item.id != 'main-theme'){
-            document.querySelector('.customize-theme').style.display = 'none';
-        }else {
-            document.querySelector('.customize-theme').style.display = 'grid'2;
-        } */
     })
 })
 
